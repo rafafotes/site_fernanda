@@ -105,5 +105,10 @@
 }
 
 .teal {
-	background-color: #646d6c !important;
+	background-color: #313D3C !important;
+}
+
+.logo {
+	width: 200px;
+	margin-top: 6px;
 }
