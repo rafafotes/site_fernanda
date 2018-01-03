@@ -1,0 +1,70 @@
+<div class="codrops-top">
+    <span class="right">
+        <a href="http://tympanus.net/Development/RockingLetters/">
+            <strong>Telefone: 11 98653-6521 </strong>
+        </a>
+        |
+        <a href="http://tympanus.net/codrops/2012/01/02/fullscreen-background-image-slideshow-with-css3/">
+            <strong>contato@cwbrazil.com.br</strong>
+        </a>
+    </span>
+    <div class="clr"></div>
+</div>
+<ul id="dropdown_africa" class="dropdown-content">
+    <li><a href="continent-tours.html">Angola</a></li>
+    <li><a href="continent-tours.html">Benim</a></li>
+    <li><a href="continent-tours.html">Burkina Faso</a></li>
+    <li><a href="continent-tours.html">Camarões</a></li>
+    <li><a href="continent-tours.html">Cabo Verde</a></li>
+    <li><a href="continent-tours.html">República Centro Africana</a></li>
+    <li><a href="continent-tours.html">Chade</a></li>
+    <li><a href="tip-tours.html">Marrocos</a></li>
+    <li> <a href="malagasy-tours.html">Madasgacar</a> </li>
+</ul>
+<ul id="dropdown_asia" class="dropdown-content">
+    <li><a href="indian-holiday.html">Índia</a></li>
+    <li><a href="indian-holiday.html">Nepal</a></li>
+    <li><a href="indian-holiday.html">Tibet</a></li>
+    <li><a href="indian-holiday.html">Butão</a></li>
+    <li><a href="indian-holiday.html">Sri Lanka</a></li>
+    <li><a href="indian-holiday.html">Maldivas</a></li>
+    <li><a href="wind-of-mongolia.html">Mongólia</a></li>
+</ul>
+<ul id="dropdown_europa" class="dropdown-content">
+    <li><a href="imperial-connection.html">Áustria</a></li>
+    <li><a href="visit-greece.html">Grécia</a></li>
+</ul>
+<ul id="dropdown_continentes" class="dropdown-content nested">
+    <li><a class="dropdown-button" href="#!" data-activates="dropdown_africa" data-alignment="left" data-hover="hover">África<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a class="dropdown-button" href="#!" data-activates="dropdown_asia" data-alignment="left" data-hover="hover">Ásia<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a class="dropdown-button" href="#!" data-activates="dropdown_europa" data-alignment="left" data-hover="hover">Europa<i class="material-icons right">arrow_drop_down</i></a></li>
+</ul>
+<div class="nav-wraper">
+<nav class="teal" role="navigation" style="z-index: 9999; position: relative;">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="index.html" class="brand-logo">CW BRAZIL</a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#">Sobre</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown_continentes" data-beloworigin="true">Destinos<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Mídia</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Destinos</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Mídia</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
+</nav>
+</div>
+<script>
+$(document).ready(function(){
+  $(".dropdown-button").dropdown();
+  $(".button-collapse").sideNav();
+  $('.collapsible').collapsible();
+});
+</script>
