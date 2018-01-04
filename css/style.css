@@ -112,3 +112,101 @@
 	width: 200px;
 	margin-top: 6px;
 }
+
+.logo-sm {
+  background-color: white;
+}
+
+.cor-logo-2{
+  background-color: #635E50;
+}
+
+.textao{
+  font-size: 50px
+}
+
+.right{
+  text-align: right;
+}
+
+.sobre-img{
+  background-image: url(../images/pexels-photo-185933.jpeg);
+  height: 300px;
+  background-position: -182px 693px
+}
+
+.midia-img{
+  background-image: url(../images/man-coffee-cup-pen.jpg);
+  height: 300px;
+  background-position: -1281px 581px;
+  background-size: 1281px
+}
+
+.contato-img{
+  background-image: url(../images/mail.jpg);
+  height: 300px;
+  background-position: -1281px 693px;
+  background-size: 1281px
+}
+
+.single-title-im-wrap-midia {
+    position: absolute;
+    bottom: 56px;
+    width: 863px;
+    left: 0;
+    /* padding-right: 410px; */
+    text-align: left;
+}
+
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+
+.single-title-im-wrap {
+    position: absolute;
+    bottom: 191px;
+    width: 363px;
+    left: 0;
+    /*padding-right: 410px;*/
+}
+
+.single-title-im-wrap-right {
+    position: absolute;
+    bottom: 46px;
+    width: 622px;
+    right: 0;
+    /*padding-left: 410px;*/
+}
+
+.single-title-im-content {
+    background: rgba(0,0,0, 0.85);
+    padding: 20px;
+}
+
+.single-title-im-inside {
+    max-width: 730px;
+    float: right;
+    width: 100%;
+}
+
+.single-title {
+    color: #fff;
+    position: relative;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.justifica{
+  text-align: justify;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+    color: #635E50;
+}

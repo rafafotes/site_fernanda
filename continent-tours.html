@@ -31,8 +31,8 @@
 
 
         <div class="">
-            <div class="section  teal lighten-2">
-                <h4 class="header center white-text text-lighten-1 insetshadow">ÁFRICA</h4>
+            <div class="section  cor-logo-2">
+                <h4 class="header center white-text text-lighten-1">ÁFRICA</h4>
                 <!--   Icon Section   -->
             </div>
 
@@ -50,7 +50,7 @@
                         <div class="card-panel">
                             <p>DESTINOS: Angola, Benim. Burkina Faso, Camarões, Cabo Verde, República Centro,Africana, Chade, Congo, Costa do Marfim, Republica Democrática do Congo, Guiné Equatorial, Gabão, Gana, Guiné, Guiné Bissau, Libéria, Mali, Mauritánia, Niger, Nigéria , São Tomé e Principe, Senegal , Serra Leoa, Gambia, Togo, Djibouti, Eritréia e Sudão.</p>
                         </div>
-                        <div class="card-panel teal">
+                        <div class="card-panel teal white-text">
                             <h5>A experiencia que você confia</h5>
                             <p>Ninguém conhece a Africa melhor do que a Continent Tours. Nosso staff operacional localizado estrategicamente, possui um extenso conhecimento sobre a cultura local, línguas e tradições de cada destino que operamos.</p>
                             <br>
@@ -104,44 +104,17 @@
 
 
             <footer class="page-footer teal">
-                <div class="container">
-                  <div class="row">
-                    <div class="col l6 s12">
-                      <h5 class="white-text">Sobre</h5>
-                      <p class="grey-text text-lighten-4">O grupo CW Brazil atua como um escritório de Marketing e Representações na America do Sul. Baseada em São Paulo, a empresa trabalha com credibilidade para garantir que o seu cliente (atualmente representando produtos turísticos diversos) tenha uma expressão no mercado Nacional e na America Latina e uma exposição junto ao trade turístico para se desenvolver como negócio e incrementar o market share de clientes da America do Sul.</p>
-
-
-                    </div>
-                    <div class="col l3 s12">
-                      <h5 class="white-text">Settings</h5>
-                      <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                      </ul>
-                    </div>
-                    <div class="col l3 s12">
-                      <h5 class="white-text">Connect</h5>
-                      <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="footer-copyright">
-                  <div class="container">
-                  Made by <a class="orange-text text-lighten-3" href="http://www.cwbrazil.com.br/">CW BRAZIL</a>
-                  </div>
-                </div>
-              </footer>
+                
+            </footer>
     </body>
     <script>
     $(document).ready(function(){
-      $('#nav-placeholder').load('nav.html');
+      $('#nav-placeholder').load('nav.html', function(res, stat, jq){
+        if(stat == "success"){
+            $('#nav-destinos').addClass('active');
+        }
+      });
+      $('footer').load('footer.html');
     });
     </script>
 </html>

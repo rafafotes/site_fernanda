@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Fullscreen Background Image Slideshow with CSS3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Fullscreen Background Image Slideshow with CSS3 - A Css-only fullscreen background image slideshow" />
+        <meta name="keywords" content="css3, css-only, fullscreen, background, slideshow, images, content" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style1.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+        <script src="js/datamaps.world.min.js"></script>
+    </head>
+    <body id="page">
+        <div id="nav-placeholder">
+        </div>
+        <div class="">
+            <div class="section cor-logo-2">
+                <h4 class="header center white-text text-lighten-1">NA MÍDIA</h4>   
+                <!--   Icon Section   -->
+            </div>
+         
+        </div>
+        <div class="container">
+            <div class="row center">
+                <div class="col s12 m12">
+                    <div class="card">
+                        <div class="card-image midia-img">
+                          <!-- <img class="sobre-img" src="images/pexels-photo-185933.jpeg"> -->
+                          <div class="single-title-im-wrap-midia">
+                            <div class="single-title-im-content clearfix">
+                                <div class="single-title-im-inside clearfix">
+                                    
+                                     <span class="single-title">A CWBrazil se mantém atualizada e participativa nos principais eventos sobre turismo que acontecem ao redor do mundo.</span>
+                                    
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m6">
+                <a href="http://http://turismoempauta.tur.br/materias/cw-brazil-promove-famtour-para-egito-e-india/">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/Midia5.png">
+                  </div>
+                  <div class="card-content">
+                    <p>CW Brazil conquista Representação de DMC na África</p>
+                  </div>
+                </div>
+                </a>
+              </div>
+              <div class="col s12 m6">
+                <a href="http://http://turismoempauta.tur.br/materias/cw-brazil-promove-famtour-para-egito-e-india/">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/Midia4.png">
+                  </div>
+                  <div class="card-content">
+                    <p>CW Brazil promove FamTour para Egito e India</p>
+                  </div>
+                </div>
+                </a>
+              </div>
+              <div class="col s12 m6">
+                <a href="http://www.panrotas.com.br/noticia-turismo/mercado/cw-brazil-conquista-representacao-de-dmc-da-india_117523.html">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="images/Midia3.png">
+                    </div>
+                    <div class="card-content">
+                      <p>CW Brazil conquista representação de DMC da Índia</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col s12 m6">
+                <a href="http://jornalturismoeeventos.com.br/2016/07/17/cw-brazil-promove-famtour-para-egito-e-india/">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="images/Midia2.png">
+                    </div>
+                    <div class="card-content">
+                      <p>CW Brazil promove FamTour para Egito e India</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col s12 m6">
+                <a href="http://turismoempauta.tur.br/materias/cw-brazil-apresenta-a-plataforma-gtbeds/">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="images/Midia1.png">
+                    </div>
+                    <div class="card-content">
+                      <p>CW Brazil apresenta a plataforma GTBEDS</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            
+            
+        </div>
+        <footer class="page-footer teal">
+
+        </footer>
+    </body>
+    <script>
+    $(document).ready(function(){
+      $('#nav-placeholder').load('nav.html', function(res, stat, jq){
+        if(stat == "success"){
+            $('#nav-midia').addClass('active');
+        }
+      });
+      $('footer').load('footer.html');
+      $('#nav-sobre').addClass('active');
+    });
+    </script>
+</html>

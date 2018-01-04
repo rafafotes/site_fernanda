@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Fullscreen Background Image Slideshow with CSS3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Fullscreen Background Image Slideshow with CSS3 - A Css-only fullscreen background image slideshow" />
+        <meta name="keywords" content="css3, css-only, fullscreen, background, slideshow, images, content" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style1.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+       <script language="JavaScript" src="js/gen_validatorv31.js" type="text/javascript"></script>
+    </head>
+    <body id="page">
+        <div id="nav-placeholder">
+        </div>
+        <div class="">
+            <div class="section cor-logo-2">
+                <h4 class="header center white-text text-lighten-1">Contato</h4>   
+                <!--   Icon Section   -->
+            </div>
+         
+        </div>
+        <div class="container">
+          <div class="row center">
+                <div class="col s12 m12">
+                    <div class="card">
+                        <div class="card-image contato-img">
+                          <!-- <img class="sobre-img" src="images/pexels-photo-185933.jpeg"> -->
+                          <div class="single-title-im-wrap-midia">
+                            <div class="single-title-im-content clearfix">
+                                <div class="single-title-im-inside clearfix">
+                                    
+                                     <span class="single-title">Fique a vontade para enrar em contato e escrlarecer todas as suas dúvidas.</span>
+                                    
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+          <div class="row">
+            <div class="col s12 m6 offset-m3">
+              <form name="contactform" action="contact-form-handler.php" method="POST">
+
+                <div class="input-field">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input type="text" id="nome" name="nome" class="validate">
+                  <label for="nome">Nome</label>
+                </div>
+
+                <div class="input-field">
+                  <i class="material-icons prefix">email</i>
+                  <label for="email" data-error="Preemcha Corretamente" data-success="OK">E-Mail</label>
+                  <input type="email" id="email" name="email" class="validate">
+                </div>
+
+                <div class="input-field">
+                  <i class="material-icons prefix">phone</i>
+                  <label for="telefone">Telefone</label>
+                  <input type="text" id="telefone" name="telefone" class="validate">
+                </div>
+
+                <div class="input-field">
+                  <i class="material-icons prefix">mode_edit</i>
+                  <label for="mensagem">Mensagem</label>
+                  <textarea id="mensagem" name="mensagem" class="materialize-textarea" style="height:200px"></textarea>
+                </div>
+                <div class="center">
+                  <input type="submit" value="Enviar" class="waves-effect waves-light btn teal">
+                </div>
+
+              </form>
+
+            </div>
+           </div>
+          </div>    
+        </div>
+        <footer class="page-footer teal">
+
+        </footer>
+    </body>
+    <script>
+    $(document).ready(function(){
+      $('#nav-placeholder').load('nav.html', function(res, stat, jq){
+        if(stat == "success"){
+            $('#nav-contato').addClass('active');
+        }
+      });
+      $('footer').load('footer.html');
+      $('#nav-sobre').addClass('active');
+      var frmvalidator  = new Validator("contactform");
+      frmvalidator.addValidation("nome","req","Informe seu nome."); 
+      frmvalidator.addValidation("email","req","Informe seu e-mail."); 
+      frmvalidator.addValidation("email","email","Formato de e-Mail inválido."); 
+      frmvalidator.addValidation("telefone","req","Informe seu telefone"); 
+      frmvalidator.addValidation("mensagem","req","Digite uma mensagem."); 
+      
+    });
+    </script>
+</html>
